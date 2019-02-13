@@ -21,23 +21,36 @@
 }
 
 .item__bottom__title {
+  width:  320px;
   margin-top: 5px;
   font-size: 20px;
   color: red;
   text-align: left;
   a {
-    color :#B0C4DE;
+    color :pink;
   }
 }
 
 .item__bottom__time {
   text-align: left;
   a {
-    color: grey;
+    color: pink;
   }
 }
 
 .activator {
   height: 200px;
-  width:  300px;
+  width:  320px;
 }
+
+.pagination {
+  background-color: black;
+  span {
+    font-size: 25px;
+    color: pink;
+  }
+  span a{
+    color: pink;
+  }
+}
+
