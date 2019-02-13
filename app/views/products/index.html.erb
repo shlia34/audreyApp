@@ -4,11 +4,11 @@
 
   <div class = "item">
     <div class = "item__image">
-      <img class = "activator" src = <%= product.image_url %>>
+      <a href="/products/<%=product.id%>"><img src=<%= product.image_url %> class="activator" ></a>
     </div>
     <div class = "item__bottom">
       <div class = "item__bottom__title">
-        <a><%= product.title %></a>
+        <a><%= link_to product.title, product_path(product.id) %></a>
       </div>
       <div class = "item__bottom__time">
         <a><%= product.date%></a>
