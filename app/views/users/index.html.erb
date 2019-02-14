@@ -1,0 +1,8 @@
+<div class = "user_show">
+  <h2>< リトルトゥース達 ></h2>>
+
+  <% @users.each do |user| %>
+    <p><%= link_to user.name , "/users/#{user.id}"%></p>
+  <% end %>
+
+</div>
