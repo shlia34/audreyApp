@@ -6,7 +6,7 @@
     <%= devise_error_messages! %>
 
     <div class="field">
-      <%= f.label :name %><em>6 characters maximum</em><br />
+      <%= f.label :name %><em> (6文字まで)</em><br />
       <%= f.text_field :name,autofocus: true,maxlength: "6" %>
     </div>
 
@@ -19,7 +19,7 @@
     <div class="field">
       <%= f.label :password %>
       <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
+      <em>(<%= @minimum_password_length %> 文字以内)</em>
       <% end %><br />
       <%= f.password_field :password, autocomplete: "new-password" %>
     </div>

@@ -1,14 +1,21 @@
 .user_finction_area {
   width:70%;
   padding: 30px;
-  margin: auto;
-  background-color: white;
+  margin: 0 auto;
+  background-color: silver;
+  margin-top: 70px;
+  h2 {
+    font-size:30px;
+    margin-bottom: 10px;
+  }
+
 
   input {
     margin-bottom: 10px;
   }
   .field {
-    margin-bottom: 10px;
-    background-color: white;
+
+    padding-bottom: 10px;
+    background-color: silver;
   }
 }

@@ -1,3 +1,5 @@
+<div class = "user_finction_area">
+
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -18,9 +20,9 @@
     </div>
   <% end -%>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+  <input class="action btn pink lighten-3" type = "submit" name ="commit" value="ログイン">
 <% end %>
 
 <%= render "devise/shared/links" %>
+
+</div>>
