@@ -27,21 +27,15 @@
   </div>
   <div class = "reviews">
     <h3>< リトルトゥースの声 ></h3>
+      <% if @reviews %>
+        <% @reviews.each do |review| %>
+        <div class = "review">
+          <%= link_to review.user.name, "#"%>
+          <p><%= review.text  %></p>
+        </div>
+      <% end %>
+    <% end %>
 
-    <div class = "review">
-      <%= link_to "釈迦ベイベー", "#"%>
-      <p>神回</p>
-    </div>
-
-    <div class = "review">
-      <%= link_to "釈迦ベイベー", "#"%>
-      <p>神回</p>
-    </div>
-
-    <div class = "review">
-      <%= link_to "釈迦ベイベー", "#"%>
-      <p>神回</p>
-    </div>
   </div>
 </div>
 
