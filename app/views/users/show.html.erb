@@ -1,0 +1,13 @@
+<div class = "review-zone" >
+
+  <div class = "reviews">
+    <h3><%= @user.name %> さんの声</h3>
+      <% if @reviews %>
+        <% @reviews.each do |review| %>
+        <div class = "review">
+          <%= link_to review.user.name, "/users/#{@user.id}"%>
+          <p><%= review.text  %>
+            <%= link_to "放送日:#{review.product.date}", "/products/#{review.product.id}",class: "review__link" %></p>
+        </div>
+      <% end %>
+    <% end %>

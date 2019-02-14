@@ -30,7 +30,7 @@
       <% if @reviews %>
         <% @reviews.each do |review| %>
         <div class = "review">
-          <%= link_to review.user.name, "#"%>
+          <%= link_to review.user.name, "/users/#{review.user.id}"%>
           <p><%= review.text  %></p>
         </div>
       <% end %>

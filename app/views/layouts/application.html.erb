@@ -24,7 +24,7 @@
           <a href="/" class="brand-logo">#annkw</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <% if user_signed_in? %>
-              <li><%= link_to current_user.name,"" %></li>
+              <li><%= link_to current_user.name,"/users/#{current_user.id}" %></li>
               <li><%= link_to "リトルトゥース","" %></li>
               <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
             <% end %>
