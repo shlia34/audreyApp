@@ -20,8 +20,10 @@
 
 <div class = "review-zone" >
   <div class = "form">
-    <textarea name="text" placeholder="コメントする"></textarea>
-    <input type="submit" value="送信">
+    <%= form_tag("/products/#{@product.id}/reviews", method: :post, id: "new_review") do %>
+      <textarea name="text" placeholder="コメントする"></textarea>
+      <input type="submit" value="送信">
+    <% end %>
   </div>
   <div class = "reviews">
     <h3>< リトルトゥースの声 ></h3>
