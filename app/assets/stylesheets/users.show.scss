@@ -1,5 +1,4 @@
-.user_show {
-
+.user-show {
   width: 70%;
   margin: auto;
   margin-top:40px;
@@ -14,4 +13,30 @@
     color: pink;
     font-size:20px;
   }
+  &__right {
+    width:calc(100% - 214px);
+    display: inline-block;
+    color:pink;
+    margin-left: 10px;
+    &__name {
+      font-size: 25px;
+      margin-bottom: 5px;
+    }
+    &__profile{
+      color:white;
+      height: 120px;
+    }
+    input {
+      margin-bottom:20px;
+    }
+  }
+}
+
+
+.icon_image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-top: 10px;
+
 }
