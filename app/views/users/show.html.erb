@@ -4,7 +4,6 @@
   <% if @user.image? %>
     <img src = <%= @user.image %> class = "icon_image">
   <% else %>
-   <!--  <img src="no-image.jpeg"> -->
    <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
   <% end %>
   <div class = "user-show__right">
@@ -15,7 +14,9 @@
       まだ実装してません。まだ実装してません。まだ実装してません。まだ実装してません。
 
     </div>
-    <input class = "action btn pink lighten-3" type="button" value = "変更">
+    <% if current_user.id == @user.id %>
+      <%= link_to "変更", edit_user_path(current_user.id),class: "action btn pink lighten-3"%>
+    <% end %>
   </div>
 </div>
 

@@ -1,0 +1,16 @@
+<div class = "user_finction_area">
+
+  <h2>プロフィールの編集</h2>
+
+  <%= form_for(current_user) do |f|%>
+    <%= f.label :name %><em> (6文字まで)</em><br />
+    <%= f.text_field :name,autofocus: true,maxlength: "6" %>
+
+    <%= f.file_field :image %>
+
+
+    <input type="submit" name="SENT" class = "btn pink lighten-3">
+
+  <% end %>
+
+</div>
