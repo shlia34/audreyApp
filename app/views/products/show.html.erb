@@ -30,8 +30,15 @@
       <% if @reviews %>
         <% @reviews.each do |review| %>
         <div class = "review">
-          <%= link_to review.user.name, "/users/#{review.user.id}"%>
-          <p><%= review.text  %></p>
+          <% if review.user.image? %>
+            <img src = <%= review.user.image %> class = "icon_image">
+          <% else %>
+           <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
+          <% end %>
+          <div class = "review__right">
+            <%= link_to review.user.name, "/users/#{review.user.id}"%>
+            <p><%= review.text  %></p>
+          </div>
         </div>
       <% end %>
     <% end %>
