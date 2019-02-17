@@ -1,0 +1,29 @@
+.user-show h2{
+  margin-bottom: 40px;
+}
+
+.users_index {
+  position: relative;
+  padding-bottom: 30px;
+  &__icon_image {
+    width: 150px;
+    height:150px;
+    border-radius: 75px;
+
+  }
+  &__right {
+    margin-left: 20px;
+
+    a {
+      position: absolute;
+      bottom:150px;
+      left:170px;
+    }
+    p {
+      position: absolute;
+      bottom:70px;
+      left:170px;
+      color: white;
+    }
+  }
+}
