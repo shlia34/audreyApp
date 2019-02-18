@@ -19,8 +19,6 @@ $(document).on('turbolinks:load', function() {
      $(".items").append(html);
     }
 
-
-
     $(".search__input").on("keyup", function() {
       var input = $(this).val();
 

@@ -3,8 +3,6 @@
   <%= form_tag(root_path, method: :get) do %>
   <input class="search__input" name="keyword" placeholder="日付で検索" type="text" >
   <% end %>
-
-
 </div>
 
 <div class = "items">
@@ -25,8 +23,8 @@
     </div>
   </div>
 <% end %>
-
 </div>
+
 <div class = "paginate">
   <%= paginate @products %>
 </div>
