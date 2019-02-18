@@ -1,3 +1,12 @@
+<div class = "serch">
+
+  <%= search_form_for @q, url: root_path  do |f| %>
+    <%= f.label :日付で検索する %>
+    <%= f.search_field :date_cont %>
+    <input class="action btn pink lighten-3" type = "submit" name ="commit" value="検索">
+  <% end %>
+</div>
+
 <div class = "items">
 
 <% @products.each do |product| %>
