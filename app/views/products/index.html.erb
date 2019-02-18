@@ -1,10 +1,10 @@
 <div class = "serch">
 
-  <%= search_form_for @q, url: root_path  do |f| %>
-    <%= f.label :日付で検索する %>
-    <%= f.search_field :date_cont %>
-    <input class="action btn pink lighten-3" type = "submit" name ="commit" value="検索">
+  <%= form_tag(root_path, method: :get) do %>
+  <input class="search__input" name="keyword" placeholder="日付で検索" type="text" >
   <% end %>
+
+
 </div>
 
 <div class = "items">
@@ -26,6 +26,7 @@
   </div>
 <% end %>
 
-<%= paginate @products %>
-
+</div>
+<div class = "paginate">
+  <%= paginate @products %>
 </div>

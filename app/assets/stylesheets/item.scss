@@ -44,13 +44,14 @@
 }
 
 .pagination {
+  text-align:center;
   background-color: black;
   span {
-    font-size: 25px;
-    color: pink;
+    font-size: 18px;
+    color: white;
   }
   span a{
-    color: pink;
+    color: grey;
   }
 }
 
