@@ -11,22 +11,9 @@
   </div>
   <div class = "reviews">
     <h3>< リトルトゥースの声 ></h3>
-      <% if @reviews %>
         <% @reviews.each do |review| %>
-        <div class = "review">
-          <% if review.user.image? %>
-            <img src = <%= review.user.image %> class = "icon_image">
-          <% else %>
-           <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
-          <% end %>
-          <div class = "review__right">
-            <%= link_to review.user.name, "/users/#{review.user.id}"%>
-            <p><%= review.text  %></p>
-          </div>
-        </div>
+          <%= render :partial => "review", :locals => { review: review }%>
       <% end %>
-    <% end %>
-
   </div>
 </div>
 

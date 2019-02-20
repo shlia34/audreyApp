@@ -1,0 +1,14 @@
+<div class = "review">
+  <% if review.user.image? %>
+    <img src = <%= review.user.image %> class = "icon_image">
+  <% else %>
+    <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
+  <% end %>
+  <div class = "review__right">
+    <%= link_to review.user.name, "/users/#{review.user.id}"%>
+    <p>
+      <%= review.text  %>
+      <%= link_to "放送日:#{review.product.date}", "/products/#{review.product.id}",class: "review__link" %>
+    </p>
+  </div>
+</div>
