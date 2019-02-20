@@ -18,23 +18,28 @@
       opacity: 0.4;
     }
   }
-}
-
-
-.product__bottom__title {
-  width:  320px;
-  margin-top: 5px;
-  font-size: 20px;
-  text-align: left;
-  a {
-    color :pink;
-  }
-}
-
-.product__bottom__time {
-  text-align: left;
-  a {
-    color: pink;
+  &__bottom {
+    &__title {
+      width:  320px;
+      margin-top: 5px;
+      font-size: 20px;
+      text-align: left;
+      a {
+        color :pink;
+      }
+    }
+    &__date {
+      text-align: left;
+      a {
+        color: pink;
+      }
+    }
+    &__link {
+      text-align: left;
+      a {
+        color: pink;
+      }
+    }
   }
 }
 
