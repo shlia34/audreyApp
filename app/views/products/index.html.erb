@@ -5,23 +5,10 @@
   <% end %>
 </div>
 
-<div class = "items">
+<div class = "products">
 
 <% @products.each do |product| %>
-
-  <div class = "item">
-    <div class = "item__image">
-      <a href="/products/<%=product.id%>"><img src=<%= product.image_url %> class="activator" ></a>
-    </div>
-    <div class = "item__bottom">
-      <div class = "item__bottom__title">
-        <a><%= link_to product.title, product_path(product.id) %></a>
-      </div>
-      <div class = "item__bottom__time">
-        <a><%= product.date%></a>
-      </div>
-    </div>
-  </div>
+  <%= render :partial => "product", :locals => { product: product } %>
 <% end %>
 </div>
 

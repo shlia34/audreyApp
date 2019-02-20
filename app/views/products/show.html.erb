@@ -1,21 +1,5 @@
-<div class = "items">
-
-  <div class = "item">
-    <div class = "item__image">
-      <a><img src=<%= @product.image_url %> class="activator" ></a>
-    </div>
-    <div class = "item__bottom">
-      <div class = "item__bottom__title">
-        <a><%= link_to @product.title, product_path(@product.id) %></a>
-      </div>
-      <div class = "item__bottom__time">
-        <a><%= @product.date%></a>
-      </div>
-      <div class = "item__bottom__time">
-        <%= link_to "オフィシャルページへ飛ぶ", @product.link %>
-      </div>
-    </div>
-  </div>
+<div class = "products">
+  <%= render :partial => "product", :locals => { product: @product } %>
 </div>
 
 <div class = "review-zone" >

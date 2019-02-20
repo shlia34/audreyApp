@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   def index
-    @products = Product.where('date LIKE(?)', "%#{params[:keyword]}%").order("date DESC").page(params[:page]).per(12)
+    @products = Product.where('date LIKE(?)', "%#{params[:keyword]}%").order("date DESC").page(params[:page]).per(8)
     respond_to do |format|
       format.html
       format.json

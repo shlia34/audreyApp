@@ -1,9 +1,9 @@
-.items {
+.products {
   margin-top: 30px;
   text-align:center
 }
 
-.item {
+.product {
   margin: 12px;
   display: inline-block;
   &__image {
@@ -21,7 +21,7 @@
 }
 
 
-.item__bottom__title {
+.product__bottom__title {
   width:  320px;
   margin-top: 5px;
   font-size: 20px;
@@ -31,7 +31,7 @@
   }
 }
 
-.item__bottom__time {
+.product__bottom__time {
   text-align: left;
   a {
     color: pink;
@@ -39,7 +39,6 @@
 }
 
 .activator {
-  height: 200px;
   width:  320px;
   object-fit: cover;
 }
