@@ -1,24 +1,15 @@
-# README
+# audrey-app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+「オードリーのオールナイトニッポン」のHPの過去放送のブログから、日付・タイトル・画像・HPのブログへのリンク をスクレイピングしました
 
-Things you may want to cover:
+## 機能
 
-* Ruby version
+・スクレイピングしたものを表示
 
-* System dependencies
+・インクリメンタルサーチ
 
-* Configuration
+・Userのログイン、ログアウト、サインアップ（devise）
 
-* Database creation
+・Userのアイコン画像、プロフィール欄を追加
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+・放送に対してのコメント機能
