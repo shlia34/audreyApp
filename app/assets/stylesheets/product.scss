@@ -28,6 +28,11 @@
         color :pink;
       }
     }
+    &__star a{
+      color: pink;
+      float: right;
+
+    }
     &__date {
       text-align: left;
       a {
@@ -44,6 +49,7 @@
 }
 
 .activator {
+  height: 240px;
   width:  320px;
   object-fit: cover;
 }
