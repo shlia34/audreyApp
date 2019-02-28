@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: audrey-app_production
-  username: audrey-app
-  password: <%= ENV['AUDREY-APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
