@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   resources :users, only: [:index, :show, :edit, :update]
   resources :products, only: :show do
     resources :reviews, only: [:create]
-    resources :likes, only: [:create, :destroy]
   end
+  post   '/like/:product_id' => 'likes#create',   as: 'like_create'
+  delete '/like/:product_id' => 'likes#destroy', as: 'like_destroy'
   root 'products#index'
 end
