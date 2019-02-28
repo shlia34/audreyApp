@@ -3,7 +3,7 @@
       <a href="/products/<%=product.id%>"><img src=<%= product.image_url %> class="activator" ></a>
     </div>
     <div class = "product__bottom">
-      <%= render 'like', product: product %>
+      <%= render 'products/like', product: product %>
       <div class = "product__bottom__title">
         <a><%= link_to product.title, product_path(product.id) %></a>
       </div>
