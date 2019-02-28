@@ -7,6 +7,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @reviews = @user.reviews
+    @likes = @user.likes.order("created_at DESC").page(params[:page]).per(8)
   end
 
   def edit
