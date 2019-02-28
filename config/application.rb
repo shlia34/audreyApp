@@ -17,5 +17,6 @@ module AudreyApp
       g.helper false
       g.test_framework false
     end
+    config.assets.initialize_on_precompile = false
   end
 end
