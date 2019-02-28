@@ -1,10 +1,10 @@
 <div class="like-link" id="like-link-<%= product.id %>">
   <% if current_user && current_user.likes.find_by(product_id: product.id)  %>
-    <%= link_to product_likes_path(product.id), method: :delete, remote: true do %>
+    <%= link_to like_destroy_path(product.id), method: :delete, remote: true do %>
         <div class = "iine__button">❤️<%= product.likes_count %></div>
     <% end %>
   <% else %>
-    <%= link_to product_likes_path(product.id), method: :post, remote: true do %>
+    <%= link_to like_create_path(product.id), method: :post, remote: true do %>
         <div class = "iine__button">♡️ <%= product.likes_count %></div>
     <% end %>
   <% end %>
