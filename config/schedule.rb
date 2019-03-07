@@ -19,3 +19,10 @@
 
 # Learn more: http://github.com/javan/whenever
 
+every :tuesday, :at => '12pm' do
+  rake "Scraiping.get_urls_a"
+end
+
+# bundle exec whenever
+# bundle exec whenever --update-crontab
+# をターミナルで実行した
