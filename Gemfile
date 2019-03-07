@@ -60,6 +60,7 @@ gem 'rb-readline'
 gem 'carrierwave'
 gem 'ransack'
 gem 'mini_magick'
+gem 'whenever', require: false
 
 group :production do
   gem 'pg'
