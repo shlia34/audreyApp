@@ -22,6 +22,8 @@
     &__name {
       font-size: 25px;
       margin-bottom: 5px;
+      margin-right: 10px;
+      display: inline-block;
     }
     &__profile{
       color:white;
@@ -31,6 +33,12 @@
       margin-bottom:20px;
       color:white;
       font-size: 15px;
+    }
+    &__follow {
+      display: inline-block;
+      span {
+        color: grey;
+      }
     }
   }
 }
