@@ -15,18 +15,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./materialize/css/materialize.css" rel="stylesheet" media="screen,projection" />
   </head>
 
-  <body>
     <div class = "wrapper">
       <nav class = "nav pink lighten-3">
         <div class="nav-wrapper">
-          <a href="/" class="brand-logo">#annkw</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <a href="/" class="logo">#annkw</a>
+          <ul id="nav-mobile" class="right">
             <% if user_signed_in? %>
-              <li><%= link_to current_user.name,"/users/#{current_user.id}" %></li>
-              <li><%= link_to "リトルトゥース","/users" %></li>
-              <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+              <ul>
+                <li><%= link_to current_user.name,"/users/#{current_user.id}" %></li>
+                <li><%= link_to "リトルトゥース","/users" %></li>
+                <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+              </ul>
             <% end %>
           </ul>
         </div>
