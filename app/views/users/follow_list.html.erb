@@ -1,9 +1,20 @@
-<% @user.all_following.each do |user| %>
-<table>
-<tr>
-  <td>  <%= user.name %> </td>
-  <td><%= link_to '詳細', user_path(user) %></td>
-</tr>
+<div class = "user-show">
+  <h2>< フォローリスト ></h2>
 
-</table>
-<% end %>
+  <div class = "users_indexs">
+    <% @user.all_following.each do |user| %>
+      <div class = "users_index">
+        <% if user.image? %>
+          <img src = <%= user.image %> class = "users_index__icon_image">
+        <% else %>
+         <%= image_tag 'no-image.jpeg' ,class: "users_index__icon_image"%>
+        <% end %>
+        <div class = "users_index__right">
+          <%= link_to user.name, "/users/#{user.id}"%>
+          <p><%= user.profile  %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+</div>
