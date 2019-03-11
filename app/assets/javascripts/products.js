@@ -1,6 +1,5 @@
 $(document).on('turbolinks:load', function() {
   $(function() {
-
     function appendProduct(product) {
      var html = `<div class = "product">
                   <div class = "product__image">
