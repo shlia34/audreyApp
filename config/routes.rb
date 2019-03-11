@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   devise_for :users
   resources :users, only: [:index, :show, :edit, :update]
+  put 'users/follow/:user_id' => 'users#follow'
+  put 'users/unfollow/:user_id' => 'users#unfollow'
   resources :products, only: :show do
     resources :reviews, only: [:create]
   end
