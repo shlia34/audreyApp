@@ -1,5 +1,3 @@
-
-
 <div class = "user-show">
   <% if @user.image? %>
     <img src = <%= @user.image %> class = "icon_image">
@@ -10,6 +8,8 @@
     <div class = "user-show__right__name">
       <%= @user.name %>
     </div>
+    <a><%= @user.follow_count %>フォロー</a>
+    <a><%= @user.followers_count %>フォロワー</a>
     <div class = "user-show__right__profile">
       <% if @user.profile? %>
         <%= @user.profile %>
@@ -20,6 +20,8 @@
     </div>
     <% if current_user.id == @user.id %>
       <%= link_to "変更", edit_user_path(current_user.id),class: "action btn pink lighten-3"%>
+    <% else %>
+      <%= render 'follow_form' %>
     <% end %>
   </div>
 </div>
