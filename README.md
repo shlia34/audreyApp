@@ -4,6 +4,11 @@
 
 http://www.allnightnippon.com/kw/
 
+##URL
+
+https://annkw.herokuapp.com/
+Basic認証のIDとパスワードは、どちらも「shira」です
+
 
 ## 機能
 
