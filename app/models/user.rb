@@ -8,4 +8,7 @@ class User < ApplicationRecord
 
   has_many :likes, dependent: :destroy
   has_many :like_tweets, through: :likes, source: :tweet
+
+  acts_as_followable # フォロワー機能
+  acts_as_follower   # フォロー機能
 end
