@@ -1,0 +1,7 @@
+<div id="follow_form">
+  <% if current_user.following? @user %>
+    <%= link_to "UnFollow", {controller: :users,action: :unfollow,user_id: @user.id}, method: :put ,class: "btn pink lighten-3",remote: true%>
+  <% else %>
+    <%= link_to "Follow", {controller: :users,action: :follow,user_id: @user.id}, method: :put ,class: "Follow btn black",remote: true%>
+  <% end %>
+  </div>

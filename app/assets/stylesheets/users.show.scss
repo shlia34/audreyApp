@@ -22,6 +22,8 @@
     &__name {
       font-size: 25px;
       margin-bottom: 5px;
+      margin-right: 10px;
+      display: inline-block;
     }
     &__profile{
       color:white;
@@ -32,6 +34,12 @@
       color:white;
       font-size: 15px;
     }
+    &__follow {
+      display: inline-block;
+      span {
+        color: grey;
+      }
+    }
   }
 }
 
@@ -40,4 +48,9 @@
   height: 200px;
   border-radius: 100px;
   object-fit: cover;
+}
+
+.Follow {
+  color: #f48fb1 !important;
+  border:solid 1px #f48fb1;
 }
