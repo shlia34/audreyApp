@@ -23,7 +23,9 @@ class User < ApplicationRecord
         password: Devise.friendly_token[0, 20],
         remote_image_url: auth.info.image,
         name: auth.info.name,
-        nickname: auth.info.nickname
+        nickname: auth.info.nickname,
+        profile: auth.info.description,
+        link: auth.info.urls.Twitter
       )
     end
 
