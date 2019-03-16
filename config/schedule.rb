@@ -19,8 +19,9 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every :tuesday, :at => '12pm' do
-  rake "Scraiping.get_urls_a"
+every :saturday, :at => '4:22 pm' do
+  command "rails c"
+  command "Scraping.get_urls_a"
 end
 
 # bundle exec whenever
