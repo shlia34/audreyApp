@@ -62,6 +62,8 @@ gem 'mini_magick'
 gem 'whenever', require: false
 gem 'devise'
 gem "acts_as_follower", github: "tcocca/acts_as_follower"
+gem 'omniauth'
+gem 'omniauth-twitter'
 
 group :production do
   gem 'pg'
