@@ -73,11 +73,16 @@ GEM
       warden (~> 1.2.3)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.7.1)
+    dotenv-rails (2.7.1)
+      dotenv (= 2.7.1)
+      railties (>= 3.2, < 6.1)
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.10.0)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hashie (3.6.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (1.5.3)
@@ -135,6 +140,16 @@ GEM
     nokogiri (1.10.1)
       mini_portile2 (~> 2.4.0)
     ntlm-http (0.1.1)
+    oauth (0.5.4)
+    omniauth (1.9.0)
+      hashie (>= 3.4.6, < 3.7.0)
+      rack (>= 1.6.2, < 3)
+    omniauth-oauth (1.1.0)
+      oauth
+      omniauth (~> 1.0)
+    omniauth-twitter (1.4.0)
+      omniauth-oauth (~> 1.1)
+      rack
     orm_adapter (0.5.0)
     pg (1.1.4)
     puma (3.12.0)
@@ -237,6 +252,7 @@ DEPENDENCIES
   carrierwave
   coffee-rails (~> 4.2)
   devise
+  dotenv-rails
   jbuilder (~> 2.5)
   jquery-rails
   kaminari
@@ -244,6 +260,8 @@ DEPENDENCIES
   mechanize
   mini_magick
   mysql2 (>= 0.3.18, < 0.5)
+  omniauth
+  omniauth-twitter
   pg
   puma (~> 3.0)
   rails (~> 5.0.1)

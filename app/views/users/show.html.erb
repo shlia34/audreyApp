@@ -7,6 +7,9 @@
   <div class = "user-show__right">
     <div class = "user-show__right__name">
       <%= @user.name %>
+      <%if @user.link %>
+        <%= link_to "twitter", @user.link %>
+      <% end %>
     </div>
     <div class = "user-show__right__follow">
       <a><%= @user.follow_count %></a>
