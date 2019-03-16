@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190311105245) do
+ActiveRecord::Schema.define(version: 20190316164857) do
 
   create_table "follows", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "followable_type",                 null: false
@@ -61,6 +61,9 @@ ActiveRecord::Schema.define(version: 20190311105245) do
     t.string   "name"
     t.string   "image",                                default: "https://pics.prcm.jp/299bcdd823d09/53260252/jpeg/53260252.jpeg"
     t.text     "profile",                limit: 65535
+    t.string   "uid"
+    t.string   "provider"
+    t.string   "nickname"
     t.index ["email"], name: "index_users_on_email", unique: true, using: :btree
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
