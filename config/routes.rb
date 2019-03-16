@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'users/omniauth_callbacks' }
   resources :users, only: [:index, :show, :edit, :update]
   put 'users/follow/:user_id' => 'users#follow'
   put 'users/unfollow/:user_id' => 'users#unfollow'
