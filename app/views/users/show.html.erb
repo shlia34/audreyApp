@@ -8,7 +8,9 @@
     <div class = "user-show__right__name">
       <%= @user.name %>
       <%if @user.link %>
-        <%= link_to "twitter", @user.link %>
+        <%= link_to  @user.link do %>
+          <i class="fab fa-twitter-square"></i>
+        <% end %>
       <% end %>
     </div>
     <div class = "user-show__right__follow">
