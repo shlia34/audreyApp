@@ -65,6 +65,7 @@ gem "acts_as_follower", github: "tcocca/acts_as_follower"
 gem 'omniauth'
 gem 'omniauth-twitter'
 gem 'dotenv-rails'
+gem 'font-awesome-sass', '5.3.1'
 
 group :production do
   gem 'pg'
