@@ -1,8 +1,8 @@
 <div class = "user-show">
   <% if @user.image? %>
-    <img src = <%= @user.image %> class = "icon_image">
+    <%= image_tag("#{@user.image}" ,class: "icon_image")%>
   <% else %>
-   <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
+    <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
   <% end %>
   <div class = "user-show__right">
     <div class = "user-show__right__name">
