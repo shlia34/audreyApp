@@ -3,7 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, :omniauthable
-  mount_uploader :image, ImageUploader
+  # mount_uploader :image, ImageUploader
   has_many :reviews
 
   has_many :likes, dependent: :destroy
@@ -21,7 +21,8 @@ class User < ApplicationRecord
         provider: auth.provider,
         email:    User.dummy_email(auth),
         password: Devise.friendly_token[0, 20],
-        remote_image_url: auth.info.image,
+        # remote_image_url: auth.info.image,
+        image: auth.info.image,
         name: auth.info.name,
         nickname: auth.info.nickname,
         profile: auth.info.description,

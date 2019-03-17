@@ -1,6 +1,5 @@
 <div class = "users_index">
   <% if user.image? %>
-    <!-- <img src = <%= user.image %> class = "users_index__icon_image"> -->
     <%= image_tag("#{user.image}" ,class: "users_index__icon_image")%>
   <% else %>
     <%= image_tag('no-image.jpeg' ,class: "users_index__icon_image")%>
