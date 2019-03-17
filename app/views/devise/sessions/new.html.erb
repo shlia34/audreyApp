@@ -1,6 +1,13 @@
 <div class = "user_finction_area">
 
-<h2>Log in</h2>
+<h2>ログイン</h2>
+<%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+    <%= link_to "#{OmniAuth::Utils.camelize(provider)}アカウントでログイン", omniauth_authorize_path(resource_name, provider),class: "btn blue lighten-1 twiter-login field" %><br />
+  <% end -%>
+<% end -%>
+
+
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -20,8 +27,9 @@
     </div>
   <% end -%>
 
-  <input class="action btn pink lighten-3" type = "submit" name ="commit" value="ログイン">
+  <input class="action btn grey field" type = "submit" name ="commit" value="メールアドレスでログイン">
 <% end %>
+
 
 <%= render "devise/shared/links" %>
 

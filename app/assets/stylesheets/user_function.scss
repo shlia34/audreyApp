@@ -1,5 +1,6 @@
 .user_finction_area {
-  width:70%;
+  text-align: center;
+  width:90%;
   padding: 30px;
   margin: 0 auto;
   background-color: silver;
@@ -11,8 +12,18 @@
 
   input {
     margin-bottom: 10px;
+    margin: 0 auto;
   }
   .field {
+    margin: 0 auto;
     padding-bottom: 10px;
+    width: 50%;
   }
+}
+
+.twiter-login{
+  // width: 80%;
+  // height: 50px;
+  // line-height: 50px;
+  // font-size: 20px;
 }
