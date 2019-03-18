@@ -28,10 +28,12 @@
       <% end %>
 
     </div>
-    <% if current_user.id == @user.id %>
-      <%= link_to "変更", edit_user_path(current_user.id),class: "action btn pink lighten-3"%>
-    <% else %>
-      <%= render 'follow_form' %>
+    <% if current_user %>
+      <% if current_user.id == @user.id %>
+        <%= link_to "変更", edit_user_path(current_user.id),class: "action btn pink lighten-3"%>
+      <% else %>
+        <%= render 'follow_form' %>
+      <% end %>
     <% end %>
   </div>
 </div>

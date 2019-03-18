@@ -30,6 +30,9 @@
                 <li><%= link_to "リトルトゥース","/users" %></li>
                 <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
               </ul>
+            <% else %>
+              <li><%= link_to "リトルトゥース","/users" %></li>
+              <li><%= link_to "ログイン", user_session_path %></li>
             <% end %>
           </ul>
         </div>
