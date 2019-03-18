@@ -12,6 +12,8 @@ class User < ApplicationRecord
   acts_as_followable # フォロワー機能
   acts_as_follower   # フォロー機能
 
+  validates :name, presence: true
+
   def self.find_for_oauth(auth)
     user = User.where(uid: auth.uid, provider: auth.provider).first
 
