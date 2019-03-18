@@ -8,7 +8,8 @@ http://www.allnightnippon.com/kw/
 
 https://annkw.herokuapp.com/
 
-Basic認証のIDとパスワードは、どちらも「shira」です
+Basic認証のIDとパスワードは、どちらも「shira」です（現在は必要ないです）
+
 
 ## 制作背景
 
