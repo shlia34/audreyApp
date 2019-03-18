@@ -30,19 +30,21 @@ Basic認証のIDとパスワードは、どちらも「shira」です
 
 ・スクレイピングしたものを表示、ページネーション機能
 
+・放送日のインクリメンタルサーチ
+
 ・いいね機能・一覧表示
 
-・Userのフォロー機能
-
-・放送日のインクリメンタルサーチ
+・放送に対してのコメント機能
 
 ・Userのログイン、ログアウト、サインアップ（devise）
 
 ・Twitterでのログイン
 
+・Userのフォロー機能
+
 ・Userのアイコン画像、プロフィール欄を追加
 
-・放送に対してのコメント機能
+
 
 
 
@@ -52,7 +54,8 @@ Basic認証のIDとパスワードは、どちらも「shira」です
 <img width="600" alt="2019-02-28 20 42 52" src="https://user-images.githubusercontent.com/42834409/53564150-71652580-3b99-11e9-8f14-011ba0679ba9.png">
 
 
-<img width="600" alt="スクリーンショット 2019-03-12 0 27 43" src="https://user-images.githubusercontent.com/42834409/54135788-d0f6e700-445d-11e9-926e-8ab2dc2f48a8.png">
+<img width="600" alt="スクリーンショット 2019-03-18 21 26 33" src="https://user-images.githubusercontent.com/42834409/54530107-35b5c280-49c5-11e9-81ea-d89649e67733.png">
+
 
 
 <img width="600" alt="2019-03-05 16 40 34" src="https://user-images.githubusercontent.com/42834409/53788534-780ee680-3f65-11e9-83b6-7070573d06b9.png">
