@@ -32,7 +32,7 @@
       <% if current_user.id == @user.id %>
         <%= link_to "変更", edit_user_path(current_user.id),class: "action btn pink lighten-3"%>
       <% else %>
-        <%= render 'follow_form' %>
+        <%= render :partial => 'follow_form',:locals => {user: @user} %>
       <% end %>
     <% end %>
   </div>
