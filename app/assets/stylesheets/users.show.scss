@@ -27,7 +27,9 @@
     }
     &__profile{
       color:white;
-      height: 120px;
+      min-height: 120px;
+      margin-bottom: 15px;
+      word-wrap:break-word;
     }
     a {
       margin-bottom:20px;
@@ -61,3 +63,55 @@
   padding:0 1px;
 
 }
+
+
+
+
+
+
+
+@media screen and (max-width: 680px) {
+  .user-show {
+
+    a{
+      color: pink;
+      font-size:20px;
+    }
+    &__right {
+      width: 100%;
+      color:pink;
+      margin-left: 10px;
+      &__name {
+        font-size: 25px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+      }
+      &__profile{
+        color:white;
+        height: 100%;
+      }
+      a {
+        margin-bottom:20px;
+        color:white;
+        font-size: 15px;
+      }
+    }
+  }
+
+  .icon_image {
+    width: 70vw;
+    height: 70vw;
+    border-radius: 35vw;
+    object-fit: cover;
+  }
+
+  // .Follow {
+  //   color: #f48fb1 !important;
+  //   border:solid 1px #f48fb1;
+  // }
+
+
+
+}
+
+
