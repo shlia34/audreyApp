@@ -27,13 +27,33 @@
           <ul id="nav-mobile" class="right">
             <% if user_signed_in? %>
               <ul>
-                <li><%= link_to current_user.name,"/users/#{current_user.id}" %></li>
-                <li><%= link_to "リトルトゥース","/users" %></li>
-                <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
+                <li>
+                  <%= link_to "/users/#{current_user.id}" do %>
+                    <i class="fas fa-user-alt"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to "/users" do %>
+                    <i class="fas fa-users"></i>
+                  <% end %>
+                </li>
+                <li>
+                  <%= link_to  destroy_user_session_path, method: :delete  do%>
+                    <i class="fas fa-sign-out-alt"></i>
+                  <% end %>
+                </li>
               </ul>
             <% else %>
-              <li><%= link_to "リトルトゥース","/users" %></li>
-              <li><%= link_to "ログイン", user_session_path %></li>
+              <li>
+                <%= link_to "/users" do %>
+                  <i class="fas fa-users"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to user_session_path do %>
+                  <i class="fas fa-sign-in-alt"></i>
+                <% end %>
+                </li>
             <% end %>
           </ul>
         </div>
