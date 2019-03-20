@@ -1,5 +1,5 @@
 <div class = "user-show">
-  <h2>< フォローリスト ></h2>
+  <h2><%= "#{@user.name}さんのフォロー" %></h2>
 
   <div class = "users_indexs">
     <% @user.all_following.each do |user| %>

@@ -1,30 +1,30 @@
   <%= link_to image_tag("#{user.image}" ,class: "icon_image"), user_path(user) %>
   <div class = "user-show__right">
-    <div class = "user-show__right__name">
-      <%= link_to user.name, user_path(user) %>
 
+    <div class = "user-show__right__name">
+      <%= user.name %>
       <%if user.link %>
         <%= link_to  user.link do %>
           <i class="fab fa-twitter-square"></i>
         <% end %>
       <% end %>
-
     </div>
+
     <div class = "user-show__right__follow">
       <a><%= user.follow_count %></a>
-      <span><%= link_to "フォロー", {controller: :users,action: :follow_list,user_id: user.id}, method: :get %></span>
+      <%= link_to "フォロー", {controller: :users,action: :follow_list,user_id: user.id}, method: :get %>
       <a><%= user.followers_count %></a>
-      <span></span>
       <%= link_to "フォロワー", {controller: :users,action: :follower_list,user_id: user.id}, method: :get %>
     </div>
+
     <div class = "user-show__right__profile">
       <% if user.profile? %>
         <%= user.profile %>
       <% else %>
         プロフィールは書かれていません
       <% end %>
-
     </div>
+
     <% if current_user %>
       <% if current_user.id == user.id %>
         <%= link_to "変更", edit_user_path(current_user.id),class: "action btn pink lighten-3"%>
@@ -32,4 +32,5 @@
         <%= render :partial => 'follow_form',:locals => {user: user} %>
       <% end %>
     <% end %>
+
   </div>
