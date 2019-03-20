@@ -1,7 +1,3 @@
-
-
-
-
 .products {
   margin-top: 30px;
   text-align:center;
@@ -38,11 +34,6 @@
         color :pink;
       }
     }
-    &__star a{
-      color: pink;
-      float: right;
-
-    }
     &__date {
       text-align: left;
       a {
@@ -61,7 +52,6 @@
 .activator {
   height: 240px;
   width:  320px;
-  // width: 95vw;
   object-fit: cover;
 }
 
@@ -69,7 +59,7 @@
   text-align:center;
   background-color: black;
   span {
-    font-size: 18px;
+    font-size: 25px;
     color: white;
   }
   span a{
@@ -79,8 +69,6 @@
 
 @media screen and (max-width: 680px) {
 .activator {
-  // height: 240px;
-  // width:  320px;
   width: 80vw;
   height: 60vw;
   object-fit: cover;
