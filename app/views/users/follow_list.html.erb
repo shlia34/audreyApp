@@ -3,7 +3,7 @@
 
   <div class = "users_indexs">
     <% @user.all_following.each do |user| %>
-      <%= render :partial => "users_index",:locals => { user: user } %>
+      <%= render :partial => "user",:locals => { user: user } %>
     <% end %>
   </div>
 
