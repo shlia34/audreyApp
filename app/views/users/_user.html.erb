@@ -1,16 +1,18 @@
-<% if user.image? %>
-    <%= image_tag("#{user.image}" ,class: "icon_image")%>
-  <% else %>
+<!--  <% if user.image? %>-->
+    <%= link_to image_tag("#{user.image}" ,class: "icon_image"), user_path(user) %>
+<!--   <% else %>
     <%= image_tag 'no-image.jpeg' ,class: "icon_image"%>
-  <% end %>
+  <% end %> -->
   <div class = "user-show__right">
     <div class = "user-show__right__name">
-      <%= user.name %>
+      <%= link_to user.name, user_path(user) %>
+
       <%if user.link %>
         <%= link_to  user.link do %>
           <i class="fab fa-twitter-square"></i>
         <% end %>
       <% end %>
+
     </div>
     <div class = "user-show__right__follow">
       <a><%= user.follow_count %></a>
