@@ -3,7 +3,7 @@ class UsersController < ApplicationController
 before_action :set_user, only: [:follow,:unfollow,:follow_list,:follower_list]
 
   def index
-    @users = User.order("provider DESC")
+    @users = User.order("provider DESC").page(params[:page]).per(8)
   end
 
   def show

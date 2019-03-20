@@ -4,3 +4,6 @@
   <%= render :partial => 'user',:locals => {user: user} %>
 <% end %>
 </div>
+<div class = "paginate">
+  <%= paginate @users %>
+</div>
