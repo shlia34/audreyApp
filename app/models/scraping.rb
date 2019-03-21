@@ -25,6 +25,7 @@ class Scraping
     product.save
   end
 
+
    def self.get_urls_b
     links = []
     agent = Mechanize.new

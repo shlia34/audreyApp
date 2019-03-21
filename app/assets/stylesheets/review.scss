@@ -1,25 +1,22 @@
-
 .review-zone {
   padding-top: 20px;
   padding-bottom: 30px;
   color: white;
   margin: auto;
   width: 80%;
-  .form {
+  textarea{
+    float: left;
+    width: calc(100% - 100px );
+    line-height: 42px;
+    padding-left: 10px;
   }
-    textarea{
-      float: left;
-      width: calc(100% - 100px );
-      line-height: 42px;
-      padding-left: 10px;
-    }
-    input {
-      background-color: pink;
-      font-weight: bold;
-      height: 42px;
-      padding: 0px 15px;
-      margin-left: 10px;
-      border-radius: 0.2em;
+  input {
+    background-color: pink;
+    font-weight: bold;
+    height: 42px;
+    padding: 0px 15px;
+    margin-left: 10px;
+    border-radius: 0.2em;
     }
   h3 {
     margin-top: 20px;

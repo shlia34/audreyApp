@@ -1,17 +1,14 @@
 <div class = "serch">
-
   <%= form_tag(root_path, method: :get) do %>
   <input class="search__input" name="keyword" placeholder="日付で検索" type="text" >
   <input class="action btn pink lighten-3" type = "submit" name ="commit" value="検索">
-
   <% end %>
 </div>
 
 <div class = "products">
-
-<% @products.each do |product| %>
-  <%= render :partial => "product", :locals => { product: product } %>
-<% end %>
+  <% @products.each do |product| %>
+    <%= render :partial => "product", :locals => { product: product } %>
+  <% end %>
 </div>
 
 <div class = "paginate">

@@ -3,18 +3,21 @@
 </div>
 
 <div class = "review-zone" >
+
   <div class = "form">
     <%= form_tag("/products/#{@product.id}/reviews", method: :post, id: "new_review") do %>
       <textarea name="text" placeholder="コメントする"></textarea>
       <input type="submit" value="送信">
     <% end %>
   </div>
+
   <div class = "reviews">
     <h3>< リトルトゥースの声 ></h3>
-        <% @reviews.each do |review| %>
-          <%= render :partial => "review", :locals => { review: review }%>
+      <% @reviews.each do |review| %>
+        <%= render :partial => "review", :locals => { review: review }%>
       <% end %>
   </div>
+
 </div>
 
 

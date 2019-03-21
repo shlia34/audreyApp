@@ -1,9 +1,10 @@
 <div class = "user-show">
   <h2>リトルトゥース達</h2>
-<% @users.each do |user| %>
-  <%= render :partial => 'user',:locals => {user: user} %>
-<% end %>
+  <% @users.each do |user| %>
+    <%= render :partial => 'user',:locals => {user: user} %>
+  <% end %>
 </div>
+
 <div class = "paginate">
   <%= paginate @users %>
 </div>
