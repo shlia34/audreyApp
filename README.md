@@ -5,5 +5,4 @@
 http://www.allnightnippon.com/kw/
 
 ## URL
-
-https://annkw.herokuapp.com/
+今閉じてる
